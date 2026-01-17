@@ -1,0 +1,38 @@
+///Read
+###
+GET http://localhost:3000/api/TreatmentRecords
+
+=============================================================
+###
+///Create
+POST http://localhost:3000/api/TreatmentRecords
+Content-Type: application/json
+
+{
+    "Date" : "2026-01-07",
+    "Notes" : "Not check-up",
+    "Cost" : 100.00,
+    "DoctorName" : "Dr. Martin"
+}
+
+//Read
+###
+GET http://localhost:3000/api/TreatmentRecords/1
+
+///Update
+###
+PUT http://localhost:3000/api/TreatmentRecords/1
+Content-Type: application/json
+
+{
+    "Date" : "2026-01-08",
+    "Notes" : "Now check-up",
+    "Cost" : 1000.00,
+    "DoctorName" : "Dr. Margus"
+}
+
+###
+///Delete
+DELETE http://localhost:3000/api/TreatmentRecords/3
+
+=============================================================
